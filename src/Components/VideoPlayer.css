@@ -1,0 +1,19 @@
+.video-container{
+    position: relative;
+    width:100%;
+    max-width: 1000px;
+    height: 70vh;
+    margin:  15px auto;
+    border-radius: 6px;
+    overflow: hidden;
+
+}
+
+.video-player{
+    width:100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
+    /* border: 1px solid #ff9900;; */
+
+}

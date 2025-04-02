@@ -1,0 +1,25 @@
+.ProductsDisplay{
+    display: flex;
+    gap:50px;
+    margin:40px 100px;
+    flex-wrap: wrap;  /* Ensures responsiveness */
+    justify-content: center;
+}
+
+.ProductDiv{
+    background-color: #232f3e;
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid white ;
+    padding: 40px 30px;
+    
+    
+}
+
+.productImg{
+    border: 4px solid yellow;
+     border-radius: 15px;
+}
+

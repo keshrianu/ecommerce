@@ -1,0 +1,23 @@
+.FilerProducts {
+    width: 1150px;
+    height: 300px;
+    margin: auto;
+    border: 2px solid white;
+    background-color: #232f3e;
+    border-radius: 15px;
+    display: flex; 
+    justify-content: center; 
+    /* align-items: center;  */
+}
+
+.FilerProductsName {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Removed quotes */
+}
+.InsideProducts {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+}

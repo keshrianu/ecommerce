@@ -1,0 +1,135 @@
+/* General Navbar Styles */
+.navbar {
+  background-color: #232f3e;
+  color: white;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1200px; */
+    margin: 0 20px;
+  
+
+  }
+  
+  /* Left Section (Logo) */
+  .left-nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    gap: 12px;
+    width: 180px;
+    /* justify-content: space-between; */
+  }
+  
+  .left-nav .logo svg {
+    font-size: 40px;
+    color: white; /* Amazon color */
+    text-align: center;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    width: 400px;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .search-bar .search-icon {
+    color: #232f3e;
+    font-size: 18px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  /* Right Section (Navigation Links & Cart) */
+  .right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px; /* Adjust width as needed */
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+    font-weight: 700;
+    
+    gap:20px
+  }
+  
+  .nav-item:hover {
+    color: #ff9900;
+  }
+  
+  /* Cart Icon */
+  .cart-icon {
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    color: white;
+    background-color: #ff9900;
+    padding: 10px 14px;
+    border-radius: 8px;
+  }
+  
+  .cart-icon:hover {
+    transform: scale(1.1);
+    background-color: #e68a00; /* Darker shade on hover */
+    box-shadow: 0 4px 10px rgba(255, 153, 0, 0.5);
+  }
+  
+  .cart-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
