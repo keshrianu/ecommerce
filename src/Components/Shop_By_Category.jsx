@@ -41,51 +41,43 @@ const Shop_By_Category = () => {
   // };
   const filterByPrice = (price) => {
     const priceNumber = Number(price); // Convert selected price to a number
-    setproducts(items.filter((product) => Number(product.price) <= priceNumber));
+    setproducts(
+      items.filter((product) => Number(product.price) <= priceNumber)
+    );
   };
-  
 
   return (
     <>
-    
       <div className="FilerProducts">
         <div className="InsideProducts ">
-          <h1>Filter Products</h1>
+          <h1 style={{ color: "White" }}>Filter Products</h1>
           <div className="FilerProductsName">
             {categories.map((category, index) => (
               <div
                 key={index}
-                style={{
-                  backgroundColor: "gray",
-                  padding: "15px 18px",
-                  borderRadius: "10px",
-                  border: "3px solid #e68a00",
-                  marginLeft: "25px",
-                  fontSize: "22px",
-                  color: "white",
-                  cursor: "pointer",
-                }}
+                className="category-box"
                 onClick={() => filterBycategory(category.name)}
               >
                 {category.name}
               </div>
             ))}
           </div>
-          <h1>Price Range</h1>
+          <h1 style={{ color: "White" }}>Price Range</h1>
           <div className="FilerProductsName">
             {priceRange.map((pricerange, index) => (
               <div
                 key={`price-${index}`}
-                style={{
-                  backgroundColor: "gray",
-                  padding: "15px 18px",
-                  borderRadius: "10px",
-                  border: "3px solid #e68a00",
-                  marginLeft: "25px",
-                  fontSize: "22px",
-                  color: "white",
-                  cursor: "pointer",
-                }}
+                className="category-box"
+                // style={{
+                //   backgroundColor: "gray",
+                //   padding: "15px 18px",
+                //   borderRadius: "10px",
+                //   border: "3px solid #e68a00",
+                //   marginLeft: "25px",
+                //   fontSize: "22px",
+                //   color: "white",
+                //   cursor: "pointer",
+                // }}
                 onClick={() => filterByPrice(pricerange)}
               >
                 {pricerange}

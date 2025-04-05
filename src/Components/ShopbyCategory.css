@@ -21,3 +21,20 @@
     align-items: center; /* Center horizontally */
     text-align: center; /* Center text */
 }
+
+.category-box {
+    background-color: gray;
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: 3px solid #e68a00;
+    margin-left: 25px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.9s;
+  }
+  
+  .category-box:hover {
+    background-color: #e68a00; /* change this to desired hover color */
+  }
+  
